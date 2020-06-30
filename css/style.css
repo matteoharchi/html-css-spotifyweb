@@ -4,28 +4,65 @@
     margin:0;
 }
 /* ASIDE MENU */
-aside.aside-menu {
+aside.ms_aside-menu {
     width: 300px;
     height: calc(100vh - 80px);
     background-color: black;
     float: left;
+    padding: 0 20px;
+    color: #6b6b6b;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.ms_logo {
+    height: 40px;
+    margin-top: 20px;
+}
+.ms_pages_menu_list {
+    list-style: none;
+    line-height: 40px;
+    margin-top: 20px;
+}
+.ms_pages_menu_list li i {
+    font-size: 20px;
+    padding-right: 15px;
+}
+.ms_playlist_menu h4 {
+    text-transform: uppercase;
+    margin: 20px 0px;
+}
+.ms_create_playlist i {
+    font-size: 40px;
+    vertical-align: bottom;
+    padding-right: 5px;
+}
+.ms_create_playlist {
+    line-height: 40px;
+    vertical-align: middle;
+    font-size: 18px;
+}
+.ms_paylist_menu_list {
+    list-style: none;
+    line-height: 30px;
+    margin-top: 20px;
 }
 /* MAIN PAGE */
-.main-container {
+.ms_main-container {
     position: relative;
     float: left;
     background-color: yellow;
     height: calc(100vh - 80px);
     width: calc(100% - 300px);
 }
-.upgrade-banner {
+.ms_upgrade-banner {
     height: 80px;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.8);
     position: absolute;
     top: 0;
 }
-.upgrade-button {
+.ms_upgrade-button {
     text-transform: uppercase;
     background: none;
     position: absolute;
@@ -39,7 +76,7 @@ aside.aside-menu {
 }
 
 /* PLAYER */
-section.player {
+section.ms_player {
     width: 100%;
     height: 80px;
     background-color: grey;
