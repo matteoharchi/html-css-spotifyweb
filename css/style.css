@@ -6,7 +6,7 @@
 /* ASIDE MENU */
 aside.ms_aside-menu {
     width: 300px;
-    height: calc(100vh - 80px);
+    height: calc(100vh - 70px);
     background-color: black;
     float: left;
     padding: 0 20px;
@@ -66,8 +66,9 @@ aside.ms_aside-menu {
     position: relative;
     float: left;
     background-color: #141922;
-    height: calc(100vh - 80px);
+    height: calc(100vh - 70px);
     width: calc(100% - 300px);
+    overflow-y: auto;
 }
 .ms_upgrade-banner {
     height: 80px;
@@ -90,9 +91,84 @@ aside.ms_aside-menu {
 }
 
 /* PLAYER */
-section.ms_player {
+footer {
     width: 100%;
-    height: 80px;
+    height: 70px;
     background-color: #282828;
     float: left;
+}
+.ms_player-container {
+    height: 100%;
+    line-height: 70px;
+    display: flex;
+}
+/* now playing */
+.ms_now_playing {
+    display: flex;
+    flex-shrink: 1;
+}
+.ms_now_playing_song {
+    display: flex;
+}
+.ms_now_playing_cover {
+    display: flex;
+    height: 100%
+}
+.ms_now_playing_cover img {
+    height: 50px;
+    align-self: center;
+}
+.ms_now_playing_info {
+    align-self: center;
+}
+.ms_now_playing_info p{
+    font-size: 12px;
+    line-height: 15px;
+    padding-left: 10px;
+}
+.ms_now_playing_title {
+    color: white;
+}
+.ms_now_playing_title_artist {
+    color: #6c6c6c;
+}
+.ms_now_playing_icons i{
+    padding-right: 10px;
+    color: #666666;
+}
+/* player */
+.ms_control_icons {
+    display: flex;
+    justify-content: space-between;
+}
+.ms_player_container {
+    height: 70px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.ms_control_icons i{
+    font-size: 20px;
+    padding-top: 10px;
+    color: #6e7176;
+}
+.ms_timeline {
+    height: 0;
+    border: 1px solid #6e7176;
+}
+/* volume control */
+.ms_volume_control {
+    display: flex;
+    align-content: center;
+}
+.ms_volume_control_icons {
+    color: white;
+    font-size: 12px;
+}
+.ms_volume_control_icons i {
+    padding-right: 10px;
+}
+.ms_volume_line {
+    height: 0px;
+    border: 1px solid white;
+    align-self: center;
 }
