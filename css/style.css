@@ -114,6 +114,10 @@ aside.ms_aside-menu {
     color: white;
     border: 1px solid white;
 }
+.ms_upgrade-button:hover {
+  cursor: pointer;
+  padding: 12px 32px;
+}
 /* MAIN */
 .ms_main-container {
     float: left;
@@ -286,6 +290,9 @@ footer {
 }
 .ms_control_icons i.fa-play-circle {
     font-size: 30px;
+}
+.ms_control_icons i.fa-play-circle:active {
+  color: white;
 }
 .ms_timeline {
     height: 0;
