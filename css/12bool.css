@@ -8,7 +8,7 @@
     clear: both;
     content: "";
 }
-[class^="col-"]{
+[class^= "col-"] {
     float: left;
 }
 /* BIG SCREEN */
@@ -126,6 +126,9 @@
         width: calc((100% / 12) * 12)
     }
     /* medium screen offset */
+    .col-md-offset-0 {
+        margin-left: calc((100% / 12) * 0)
+    }
     .col-md-offset-1 {
         margin-left: calc((100% / 12) * 1)
     }

@@ -4,13 +4,12 @@
     margin:0;
     font-family: 'Rubik', sans-serif;
 }
+
 /* ASIDE MENU */
 aside.ms_aside-menu {
-    width: 300px;
     height: calc(100vh - 70px);
     background-color: black;
     float: left;
-    padding: 0 20px;
     color: #6b6b6b;
     display: flex;
     flex-direction: column;
@@ -19,6 +18,14 @@ aside.ms_aside-menu {
 .ms_logo {
     height: 40px;
     margin-top: 20px;
+    padding-left: 20px;
+}
+.first-part a {
+    color: #6b6b6b;
+    text-decoration: none;
+}
+.first-part a:hover {
+    color: white;
 }
 .ms_pages_menu_list {
     list-style: none;
@@ -29,6 +36,15 @@ aside.ms_aside-menu {
     font-size: 20px;
     padding-right: 20px;
 }
+.ms_pages_menu_list li {
+    padding-left: 20px;
+}
+.ms_pages_menu_list li:hover {
+    border-left: 3px solid green;
+}
+.ms_playlist_menu {
+    padding-left: 20px;
+}
 .ms_playlist_menu h4 {
     text-transform: uppercase;
     margin: 20px 0px;
@@ -37,7 +53,6 @@ aside.ms_aside-menu {
     font-size: 40px;
     vertical-align: bottom;
     padding-right: 5px;
-
 }
 .ms_create_playlist {
     line-height: 40px;
@@ -49,8 +64,15 @@ aside.ms_aside-menu {
     line-height: 30px;
     margin-top: 20px;
 }
+/* downside */
 .ms_downside-part {
+    padding: 0 20px;
     margin-bottom: 10px;
+    font-size: 12px;
+}
+.ms_downside-part a{
+    color: white;
+    text-decoration: none;
 }
 .ms_downside-part hr{
     margin: 5px 0px;
@@ -68,7 +90,6 @@ aside.ms_aside-menu {
     float: left;
     background-color: #141922;
     height: 80px;
-    width: calc(100% - 300px);
 
 }
 .ms_upgrade-banner {
@@ -93,7 +114,6 @@ aside.ms_aside-menu {
 /* MAIN */
 .ms_main-container {
     float: left;
-    width: calc(100% - 300px);
     height: calc(100vh - 150px);
     background-color: #141922;
     overflow-y: auto;
@@ -103,18 +123,18 @@ aside.ms_aside-menu {
 .ms_upper_menu {
     height: 60px;
     display: flex;
-    justify-content: space-around;
 }
 .ms_upper_menu_list li {
     display: inline-block;
     text-transform: uppercase;
     color: #7a7d82;
     font-size: 12px;
-    padding-right: 20px;
+    margin-right: 20px;
 }
 .ms_upper_menu_list li:hover {
     cursor: pointer;
     color: white;
+    border-bottom: 3px solid green;
 }
 /* album */
 .ms_section_title {
@@ -123,17 +143,41 @@ aside.ms_aside-menu {
 .ms_album-row {
     margin: 40px 0;
     display: flex;
+    flex-wrap: wrap;
 }
+
 .ms_album_content {
-    padding-right: 30px;
+    padding: 15px;
 }
 .ms_album_cover {
-    height: 230px;
     position: relative;
 }
 .ms_album_cover img {
+    width: 100%;
+}
+.ms_album_info {
+    text-align: center;
+}
+.ms_album_title {
+    color: white;
+    margin: 10px 0;
+}
+.ms_album_artist {
+    color: #6e7175;
+}
+.ms_section_undertitle {
+    color: #6e7176;
+}
+.ms_artist_cover {
+    position: relative;
+}
+.ms_album_cover.round img{
+    border-radius: 50%;
+}
+.ms_artist_cover img {
     height: 100%;
 }
+/* hover */
 .ms_play_hover {
     height: 100%;
     width: 100%;
@@ -167,34 +211,8 @@ aside.ms_aside-menu {
     display: block;
     cursor: pointer;
 }
-.ms_album_info {
-    text-align: center;
-}
-.ms_album_title {
-    color: white;
-    margin: 10px 0;
-}
-.ms_album_artist {
-    color: #6e7175;
-}
-.ms_section_undertitle {
-    color: #6e7176;
-}
-.ms_artist_cover {
-    height: 230px;
-    position: relative;
-}
-.ms_artist_cover img {
-    height: 230px;
-    border-radius: 50%;
-}
-.ms_artist_cover img {
-    height: 100%;
-}
-
 /* PLAYER */
 footer {
-    width: 100%;
     height: 70px;
     background-color: #282828;
     float: left;
@@ -253,13 +271,19 @@ footer {
     flex-wrap: wrap;
 }
 .ms_control_icons i{
-    font-size: 20px;
+    font-size: 15px;
     padding-top: 10px;
     color: #6e7176;
+    line-height: 30px;
+    vertical-align: middle;
+}
+.ms_control_icons i.fa-play-circle {
+    font-size: 30px;
 }
 .ms_timeline {
     height: 0;
-    border: 1px solid #6e7176;
+    border: 2px solid #6e7176;
+    border-radius: 5px;
 }
 /* volume control */
 .ms_volume_control {
