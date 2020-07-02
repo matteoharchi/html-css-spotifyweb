@@ -8,7 +8,7 @@
     clear: both;
     content: "";
 }
-[class^= "col-"] {
+[class^="col-"] {
     float: left;
 }
 /* BIG SCREEN */
@@ -86,6 +86,7 @@
 .col-offset-12 {
     margin-left: calc((100% / 12) * 12)
 }
+
 /* MEDIUM SCREEN */
 /* medium screen column */
 @media all and (max-width: 992px) {
@@ -206,6 +207,9 @@
         width: calc((100% / 12) * 12)
     }
     /* medium screen offset */
+    .col-s-offset-0 {
+        margin-left: calc((100% / 12) * 1)
+    }
     .col-s-offset-1 {
         margin-left: calc((100% / 12) * 1)
     }
@@ -242,5 +246,94 @@
     .col-s-offset-12 {
         margin-left: calc((100% / 12) * 12)
     }
+    /* SMARTPHONE LAYOUT */
+    /* ASIDE */
+    .ms_logo {
+        display: none;
+    }
+    li.ms_logo_mobile {
+        display: block;
+    }
+    .ms_pages_menu_list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    li.ms_logo_mobile i{
+        font-size: 25px;
+        color: white;
+    }
+    .ms_pages_menu_list span{
+        display: none;
+    }
+    .ms_pages_menu_list li {
+        font-size: 10px;
+        padding-left: 5px;
+    }
+    .ms_pages_menu_list li i {
+        padding-right: 5px;
 
+    }
+    .ms_playlist_menu {
+        display: none;
+    }
+    .ms_downside-part span{
+        display: none;
+    }
+    .ms_downside-part {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .ms_downside-part i {
+        font-size: 20px;
+        margin-top: 10px;
+        padding-right: 10px;
+    }
+    .ms_downside-part hr {
+        display: none;
+    }
+    /* HEADER */
+    .ms_upgrade-button {
+        right: 20px;
+        padding: 15px;
+    }
+    /* FOOTER */
+    .ms_now_playing_cover {
+        align-self: center;
+    }
+    .ms_now_playing p {
+        font-size: 10px;
+    }
+    .ms_now_playing_cover img {
+        height: 30px;
+    }
+    .ms_now_playing_icons{
+        height: 70px;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+    .ms_now_playing_icons i {
+        font-size: 15px;
+        padding-right: 0px;
+    }
+    .ms_control_icons i{
+        font-size: 10px;
+    }
+    .ms_control_icons {
+    }
+    .ms_control_icons i.fa-play-circle {
+        font-size: 15px;
+    }
+    .ms_volume_control {
+        justify-content: center;
+    }
+    .ms_volume_control i {
+        font-size: 10px;
+        padding-right: 10px;
+    }
+    .ms_slider {
+        display: none;
+    }
 }

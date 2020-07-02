@@ -36,6 +36,9 @@ aside.ms_aside-menu {
     font-size: 20px;
     padding-right: 20px;
 }
+.ms_logo_mobile {
+    display: none;
+}
 .ms_pages_menu_list li {
     padding-left: 20px;
 }
@@ -207,7 +210,7 @@ aside.ms_aside-menu {
     top: 0;
     border-radius: 50%;
 }
-.ms_artist_cover:hover .ms_play_hover_round{
+.ms_album_cover:hover .ms_play_hover_round{
     display: block;
     cursor: pointer;
 }
@@ -216,6 +219,8 @@ footer {
     height: 70px;
     background-color: #282828;
     float: left;
+    z-index: 99;
+    width: 100%;
 }
 .ms_player-container {
     height: 100%;
@@ -273,6 +278,8 @@ footer {
 .ms_control_icons i{
     font-size: 15px;
     padding-top: 10px;
+    padding-right: 5px;
+    padding-left: 5px;
     color: #6e7176;
     line-height: 30px;
     vertical-align: middle;
@@ -294,11 +301,29 @@ footer {
     color: white;
     font-size: 12px;
 }
-.ms_volume_control_icons i {
+.ms_icons_container i {
     padding-right: 10px;
+    align-self: center;
+}
+.ms_icons_container {
+    display: flex;
+    height: 70px;
+    justify-content: space-around;
 }
 .ms_volume_line {
-    height: 0px;
-    border: 1px solid white;
-    align-self: center;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+.ms_volume_line i {
+    padding-right: 5px;
+    color: white;
+    font-size: 12px;
+}
+.ms_slider {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 2px;
+    background: green;
+    outline: none;
 }
