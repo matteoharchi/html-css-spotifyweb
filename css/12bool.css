@@ -399,15 +399,15 @@
     }
     .ms_now_playing_icons i {
         font-size: 15px;
-        padding-right: 0px;
+        padding-right: 5px;
     }
     .ms_control_icons i{
-        font-size: 10px;
+        font-size: 13px;
     }
     .ms_control_icons {
     }
     .ms_control_icons i.fa-play-circle {
-        font-size: 15px;
+        font-size: 20px;
     }
     .ms_volume_control {
         justify-content: center;
